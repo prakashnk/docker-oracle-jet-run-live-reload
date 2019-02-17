@@ -11,6 +11,7 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     git clone $GITHUB_URL app
     echo "GIT repo with Oracle JET application was cloned to /tmp/app/${TARGET_DIR}"
     git branch develop
+    git pull origin
     cd /tmp/app/$TARGET_DIR
     #install dependencies for the JET application app
     npm install

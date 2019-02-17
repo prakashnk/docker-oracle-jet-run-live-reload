@@ -1,5 +1,8 @@
 #!/bin/sh
 cd /tmp/app
+
+git branch develop
+
 git pull
 #install dependencies for the Node app
 npm install
